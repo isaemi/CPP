@@ -19,7 +19,7 @@ void bubbleSort(int* const array, int size){
     }
 }
 
-void deleteArray(int* arr){
+void deleteArray(int*& arr){
     delete[] arr;
     arr = nullptr;
 }
