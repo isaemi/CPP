@@ -12,11 +12,7 @@ using namespace std;
 
 int sumOfEven(const int* array, int size);
 double sumOfEven(const double* array, int size);
-
-void deleteArray(int* arr){
-    delete[] arr;
-    arr = nullptr;
-}
+void deleArray(int* array);
 
 int main(){
     int intArr[5];
@@ -33,6 +29,9 @@ int main(){
         cin >> doubleArr[i];
     }
     cout << "Sum of values at even locations(double): " << sumOfEven(doubleArr, 5) << endl;
+    
+    deleteArray(array);
+    
     return 0;
 }
 
@@ -50,4 +49,9 @@ double sumOfEven(const double* array, int size){
         sum += array[i];
     }
     return sum;
+}
+
+void deleteArray(int* array){
+    delete[] array;
+    array = nullptr;
 }
