@@ -30,5 +30,8 @@ int main(){
     for(int i = 0; i < 26; i++)
         cout << static_cast<char>(i + 'a') << " " << counts[i] << endl;
 
+    delete[] counts;
+    counts = nullptr;
+ 
     return 0;
 }
