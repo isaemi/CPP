@@ -5,7 +5,7 @@ int main(){
     cout << "Convert temperature in Fahrenheit to Celsius: " << endl;
     cout << "----------------------------------------------" << endl;
     cout << "Input the temperature in Fahrenheit: ";
-    int Cels, Fahr;
+    float Cels, Fahr;
     cin >> Fahr;
     Cels = (Fahr - 32) / 1.8;
     cout << "The temperature in Fahrenheit: " << Fahr << endl;
