@@ -14,4 +14,6 @@ int main(){
    n2 = temp;
    cout << "After swapping the 1st number is: " << n1 << endl;
    cout << "After swapping the 2nd number is: " << n2 << endl;
+
+   return 0;
 }
